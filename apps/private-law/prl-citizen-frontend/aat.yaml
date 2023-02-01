@@ -9,14 +9,12 @@ spec:
       ingressSessionAffinity:
         enabled: true
         sessionCookieName: sticky
-      image: hmctspublic.azurecr.io/prl/citizen-frontend:prod-b78c76f-20230104122224 #{"$imagepolicy": "flux-system:prl-citizen-frontend"}
+      image: hmctspublic.azurecr.io/prl/citizen-frontend:prod-831ce50-20230131213847 #{"$imagepolicy": "flux-system:prl-citizen-frontend"}
       cpuLimits: "1000m"
       cpuRequests: "500m"
-      memoryLimits: "2048Mi"
-      memoryRequests: "512Mi"
       replicas: 2
       readinessDelay: 45
-      readinessTimeout: 10
+      readinessTimeout: 15
       readinessPeriod: 15
       keyVaults:
         prl:

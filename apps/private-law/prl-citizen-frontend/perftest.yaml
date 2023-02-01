@@ -6,14 +6,14 @@ metadata:
 spec:
   values:
     nodejs:
-      image: hmctspublic.azurecr.io/prl/citizen-frontend:prod-b78c76f-20230104122224 #{"$imagepolicy": "flux-system:prl-citizen-frontend"}
+      image: hmctspublic.azurecr.io/prl/citizen-frontend:pr-662-060f5dd-20230201095623 #{"$imagepolicy": "flux-system:perftest-prl-citizen-frontend"}
       cpuLimits: "1000m"
       cpuRequests: "500m"
       memoryLimits: "2048Mi"
       memoryRequests: "512Mi"
       replicas: 2
       readinessDelay: 45
-      readinessTimeout: 10
+      readinessTimeout: 15
       readinessPeriod: 15
       keyVaults:
         prl:

@@ -7,11 +7,12 @@ spec:
   releaseName: prl-citizen-frontend
   values:
     nodejs:
+      disableTraefikTls: true
       replicas: 2
       useInterpodAntiAffinity: true
       memoryRequests: 512Mi
       memoryLimits: 2Gi
-      image: hmctspublic.azurecr.io/prl/citizen-frontend:prod-b78c76f-20230104122224 #{"$imagepolicy": "flux-system:prl-citizen-frontend"}
+      image: hmctspublic.azurecr.io/prl/citizen-frontend:prod-831ce50-20230131213847 #{"$imagepolicy": "flux-system:prl-citizen-frontend"}
       environment:
         FEATURE_EXAMPLE: true
   chart:
